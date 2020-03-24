@@ -22,3 +22,8 @@ $ pip3 install -r requirements.txt
 4. Done? Try sending a text like: "Hey, you quite finished there?"
 5. Bingo! The bot replies with the answer in the form of a chat!
 6. Like the project? Give the others a look too!
+
+
+## License
+[![License](http://img.shields.io/:license-mit-blue.svg?style=flat)](http://badges.mit-license.org)<br>
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
