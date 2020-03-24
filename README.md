@@ -7,6 +7,12 @@
 This awesome bot recieves a Sudoku as an input image, solves it and send you back the output on Telegram as text...<br> How Cool is that?
 <br>
 
+## Setting Up
+All you need to do is install the requirements for python and you're good to go!<br>
+```bash
+$ pip3 install -r requirements.txt
+```
+
 ## Using the bot
 1. Its pretty simple. Once the bot is initialised, try sending the command '/start' to see to check if it is indeed set up properly.<br><br>
 2. Once you're sure that it is set up, send the image of a Sudoku like this one:<br>
