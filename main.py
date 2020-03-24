@@ -2,8 +2,7 @@ import logging
 import urllib.request
 from telegram.ext import Updater, MessageHandler, CommandHandler, Filters
 import os
-import bot
- 
+
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
 def start(incoming, outgoing):
