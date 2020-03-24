@@ -20,7 +20,7 @@ def echo(incoming, outgoing):
     os.remove("solved.txt")
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
-updater = Updater(token='804669526:AAEOQ2Vnp-nyfFZrM61vdVv74aTocNMFgA0', use_context=True)
+updater = Updater(token='<Enter Token Here>', use_context=True)
 dispatcher = updater.dispatcher
 dispatcher.add_handler(MessageHandler(Filters.text, echo))
 updater.start_polling()

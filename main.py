@@ -16,7 +16,7 @@ def image(incoming, outgoing):
     os.system("main.py 1")
     os.system("bot.py 1")
     
-updater = Updater('804669526:AAEOQ2Vnp-nyfFZrM61vdVv74aTocNMFgA0')
+updater = Updater('<Ennter Token Here>')
 dp = updater.dispatcher
 dp.add_handler(CommandHandler('start',start))
 dp.add_handler(MessageHandler(Filters.photo, image))
