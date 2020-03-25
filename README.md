@@ -8,10 +8,16 @@ This awesome bot recieves a Sudoku as an input image, solves it and send you bac
 <br>
 
 ## Setting Up
-All you need to do is install the requirements for python and you're good to go!<br>
+First, we need to clone the repository on your local device.
 ```bash
+$ git clone https://github.com/Mastermind0100/Telegram-Sudoku-Solver.git
+```
+Then, let's install the necessary requirements
+```bash
+$ cd Telegram-Sudoku-Solver
 $ pip3 install -r requirements.txt
 ```
+That's it! You're good to go!
 
 ## Using the bot
 1. Its pretty simple. Once the bot is initialised, try sending the command '/start' to see to check if it is indeed set up properly.<br><br>
