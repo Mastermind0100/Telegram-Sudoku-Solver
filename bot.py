@@ -17,7 +17,7 @@ def echo(incoming, outgoing):
     print(final)
     for i in final:
         outgoing.bot.send_message(chat_id=chat_id, text=i)
-    os.remove("solved.txt")
+    # os.remove("solved.txt")
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 updater = Updater(token='<Enter Token Here>', use_context=True)
