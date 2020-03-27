@@ -4,7 +4,7 @@
 
 [![Python 3.6](https://img.shields.io/badge/python-3.6-green.svg)](https://www.python.org/downloads/release/python-360/) [![LinkedIn-profile](https://img.shields.io/badge/LinkedIn-Atharva-blue.svg)](https://www.linkedin.com/in/atharva-hudlikar/) 
 # Telegram Sudoku Solver
-This awesome bot recieves a Sudoku as an input image, solves it and send you back the output on Telegram as text...<br> How Cool is that?
+This awesome bot recieves a Sudoku as an input image, solves it and send you back the output on Telegram as a chat reply!<br> How Cool is that?
 <br>
 
 ## Setting Up
