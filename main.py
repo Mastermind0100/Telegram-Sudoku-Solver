@@ -1,23 +1,38 @@
+import cv2
 import logging
 import urllib.request
-from telegram.ext import Updater, MessageHandler, CommandHandler, Filters
 import os
 
-logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
+from telegram.ext import Updater, MessageHandler, Filters
+ 
 
-def start(incoming, outgoing):
-    outgoing.bot.send_message(chat_id=incoming.effective_chat.id, text="I think I got the Solution...")
+logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+                     level=logging.INFO)
 
-def image(incoming, outgoing):
-    photo = incoming.get_file(outgoing.effective_message.photo[-1].file_id)
-    filename = 'test.png'
-    urllib.request.urlretrieve(photo["file_path"],filename)
-    os.system("main.py 1")
-    os.system("bot.py 1")
+def some_func(bot, update):
+    pass
+    if not update.effective_message.photo:
+        update.effective_message.reply_text(text = "Please send me an image... Preferrably of a Sudoku... Thanks...")
+    else:
+        photo = bot.get_file(update.effective_message.photo[-1].file_id)
+        urllib.request.urlretrieve(photo["file_path"],'test.png')
+        update.effective_message.reply_text(text = "Image Recieved!")
+        update.effective_message.reply_text(text = "Solving the Sudoku Now")
+        os.system("main.py 1")
+        update.effective_message.reply_text(text = "-----------Solved-----------")
+        file = open('solved.txt')
+        for i in range(0,10):
+            text = file.readline()
+            update.effective_message.reply_text(text = text)
+        file.close()
+        update.effective_message.reply_text(text = "Did I solve it right?")
+       
+def main():
+    updater = Updater('<Enter bot token here>')
+    dp = updater.dispatcher
+    dp.add_handler(MessageHandler(Filters.all, some_func))
+    updater.start_polling()
+    updater.idle()
     
-updater = Updater('<Ennter Token Here>')
-dp = updater.dispatcher
-dp.add_handler(CommandHandler('start',start))
-dp.add_handler(MessageHandler(Filters.photo, image))
-updater.start_polling()
-updater.idle()
+if __name__ == '__main__':
+    main()
