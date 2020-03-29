@@ -7,6 +7,10 @@
 This awesome bot recieves a Sudoku as an input image, solves it and send you back the output on Telegram as a chat reply!<br> How Cool is that?
 <br>
 
+## Output
+![photo6053001984572762464](https://user-images.githubusercontent.com/36445600/77847160-9848bd80-71d8-11ea-857c-c0df0e48198f.jpg)
+
+
 ## Setting Up
 First, we need to clone the repository on your local device.
 ```bash
