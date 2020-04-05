@@ -2,8 +2,9 @@
 
 [![forthebadge made-with-c++](https://forthebadge.com/images/badges/made-with-c-plus-plus.svg)](http://www.cplusplus.org/)
 
-# <div align="center">Telegram Sudoku Solver</div> <div align="center"> [![Python 3.6](https://img.shields.io/badge/python-3.6-green.svg)](https://www.python.org/downloads/release/python-360/) [![LinkedIn-profile](https://img.shields.io/badge/LinkedIn-Atharva-blue.svg)](https://www.linkedin.com/in/atharva-hudlikar/) </div>
+[![Python 3.6](https://img.shields.io/badge/python-3.6-green.svg)](https://www.python.org/downloads/release/python-360/) [![LinkedIn-profile](https://img.shields.io/badge/LinkedIn-Atharva-blue.svg)](https://www.linkedin.com/in/atharva-hudlikar/)
 
+# Telegram Sudoku Solver
 This awesome bot recieves a Sudoku as an input image, solves it and send you back the output on Telegram as a chat reply!<br> How Cool is that?
 <br>
 
