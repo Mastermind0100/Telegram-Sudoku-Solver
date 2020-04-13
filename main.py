@@ -1,4 +1,3 @@
-import cv2
 import logging
 import urllib.request
 import os
@@ -9,7 +8,7 @@ from telegram.ext import Updater, MessageHandler, Filters
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                      level=logging.INFO)
 
-def some_func(bot, update):
+def solver(bot, update):
     pass
     if not update.effective_message.photo:
         update.effective_message.reply_text(text = "Please send me an image... Preferrably of a Sudoku... Thanks...")
@@ -30,7 +29,7 @@ def some_func(bot, update):
 def main():
     updater = Updater('<Enter bot token here>')
     dp = updater.dispatcher
-    dp.add_handler(MessageHandler(Filters.all, some_func))
+    dp.add_handler(MessageHandler(Filters.all, solver))
     updater.start_polling()
     updater.idle()
     
